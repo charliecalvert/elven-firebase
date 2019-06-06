@@ -5,6 +5,16 @@ import Paper from '@material-ui/core/Paper';
 
 export const FirebaseLogin = function() {
     let currentUser = window.firebase.auth().currentUser;
+
+    if (!currentUser) {
+        currentUser = {
+            displayName: 'unknown',
+            email: 'unknown',
+            providerId: 'unknown',
+            photoURL: 'unknown'
+        }
+    }
+    
     function signOut() {
         window.firebase
             .auth()

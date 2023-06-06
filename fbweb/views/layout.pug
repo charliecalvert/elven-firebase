@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        // link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        // script(src="/scripts/jquery.js")
+        // script(src="bower_components/bootstrap/dist/js/bootstrap.js")
+
+        // Firebase
+        script(src='https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js')
+        // script(defer='', src='https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js')
+        script(src='https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js')
+        script(src='https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js')
+        script(type="import" src="javascript/configuration.js")
+        script(type="import" src="javascript/control.js")
+        script(type="import" src="javascript/elf-firebase.js")
+        script(type="import" src="javascript/FirebaseLogout.js")
+    body
+        block content
